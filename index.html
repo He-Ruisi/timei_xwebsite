@@ -4,14 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Timei 时宜 - 画出你的时光轨迹</title>
+
+    <!-- DNS Prefetch & Preconnect for External Resources -->
+    <link rel="dns-prefetch" href="//cdn.tailwindcss.com">
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link rel="dns-prefetch" href="//unpkg.com">
+    <link rel="dns-prefetch" href="//esm.sh">
+
+    <link rel="preconnect" href="https://cdn.tailwindcss.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://unpkg.com" crossorigin>
+    <link rel="preconnect" href="https://esm.sh" crossorigin>
+
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap" as="style">
+    <link rel="preload" href="assets/phone/20260205_195433_0530.png" as="image">
+    <link rel="preload" href="assets/icon/favicon_128.ico" as="image" type="image/x-icon">
+
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" sizes="128x128" href="assets/icon/favicon_128.ico">
     <link rel="icon" type="image/x-icon" sizes="256x256" href="assets/icon/favicon_256.ico">
     <link rel="icon" type="image/x-icon" sizes="512x512" href="assets/icon/favicon_512.ico">
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+
     <!-- Crayon Font -->
     <link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
     
@@ -166,11 +188,36 @@
                 <div class="phone-carousel flex-shrink-0">
                     <div class="phone-mockup flex flex-col overflow-hidden">
                         <div id="phone-slides" class="relative flex-1">
-                            <img src="assets/phone/20260205_195433_0530.png" class="phone-slide active w-full h-full object-cover" alt="Timei App Screenshot 1">
-                            <img src="assets/phone/20260205_195452_0198.png" class="phone-slide w-full h-full object-cover" alt="Timei App Screenshot 2">
-                            <img src="assets/phone/20260205_195507_0755.png" class="phone-slide w-full h-full object-cover" alt="Timei App Screenshot 3">
-                            <img src="assets/phone/20260205_195515_0859.png" class="phone-slide w-full h-full object-cover" alt="Timei App Screenshot 4">
-                            <img src="assets/phone/20260205_195528_0587.png" class="phone-slide w-full h-full object-cover" alt="Timei App Screenshot 5">
+                            <img src="assets/phone/20260205_195433_0530.png"
+                                 class="phone-slide active w-full h-full object-cover"
+                                 alt="Timei App Screenshot 1"
+                                 width="194"
+                                 height="387"
+                                 fetchpriority="high">
+                            <img src="assets/phone/20260205_195452_0198.png"
+                                 class="phone-slide w-full h-full object-cover"
+                                 alt="Timei App Screenshot 2"
+                                 width="194"
+                                 height="387"
+                                 loading="lazy">
+                            <img src="assets/phone/20260205_195507_0755.png"
+                                 class="phone-slide w-full h-full object-cover"
+                                 alt="Timei App Screenshot 3"
+                                 width="194"
+                                 height="387"
+                                 loading="lazy">
+                            <img src="assets/phone/20260205_195515_0859.png"
+                                 class="phone-slide w-full h-full object-cover"
+                                 alt="Timei App Screenshot 4"
+                                 width="194"
+                                 height="387"
+                                 loading="lazy">
+                            <img src="assets/phone/20260205_195528_0587.png"
+                                 class="phone-slide w-full h-full object-cover"
+                                 alt="Timei App Screenshot 5"
+                                 width="194"
+                                 height="387"
+                                 loading="lazy">
                         </div>
                     </div>
                 </div>
@@ -312,7 +359,12 @@
             <div class="grid grid-cols-2 gap-6">
                 <div class="flex flex-col items-center gap-3">
                     <div class="w-32 h-32 bg-white border-2 border-crayon-black rounded-xl p-2 flex items-center justify-center sketch-shadow-sm overflow-hidden">
-                        <img src="assets/微信群.png" alt="Timei微信群二维码" class="w-full h-full object-contain">
+                        <img src="assets/微信群.png"
+                             alt="Timei微信群二维码"
+                             class="w-full h-full object-contain"
+                             width="128"
+                             height="128"
+                             loading="lazy">
                     </div>
                     <span class="font-bold">微信群</span>
                 </div>
