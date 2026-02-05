@@ -133,7 +133,7 @@
 
     <!-- Toast Notification -->
     <div id="toast" class="toast">
-        <span id="toast-message">2.9日开放下载，敬请期待！</span>
+        <span id="toast-message">Timei Beta v1.1 | 已深度集成 AI<br/>2.9日开放下载，敬请期待！</span>
     </div>
 
     <!-- Landing Page -->
@@ -160,9 +160,10 @@
                 </p>
             </div>
 
-            <!-- Phone Screenshot Section -->
-            <div class="flex justify-center mb-8">
-                <div class="phone-carousel">
+            <!-- Phone Screenshot Section with CTA -->
+            <div class="flex flex-col lg:flex-row items-center justify-center gap-12 mb-8">
+                <!-- Phone Carousel -->
+                <div class="phone-carousel flex-shrink-0">
                     <div class="phone-mockup flex flex-col overflow-hidden">
                         <div id="phone-slides" class="relative flex-1">
                             <img src="assets/phone/20260205_195433_0530.png" class="phone-slide active w-full h-full object-cover" alt="Timei App Screenshot 1">
@@ -173,29 +174,26 @@
                         </div>
                     </div>
                 </div>
-            </div>
 
-             <div class="bg-white px-3 py-1 border-2 border-crayon-black -rotate-1 sketch-shadow inline-block text-sm font-bold mb-6">
-                    Timei Beta v1.1 | 已深度集成 AI
-                </div>
+                <!-- CTA Buttons and Trust Badge -->
+                <div class="flex flex-col items-center lg:items-start gap-8">
+                    <!-- CTA Buttons -->
+                    <div class="flex flex-col sm:flex-row gap-6">
+                        <button onclick="showToast()" class="bg-crayon-yellow px-10 py-4 text-xl border-2 border-crayon-black rounded-xl sketch-shadow btn-active flex items-center justify-center gap-2">
+                            开始规划 <i data-lucide="arrow-right"></i>
+                        </button>
+                        <button onclick="toggleQr(true)" class="bg-white px-10 py-4 text-xl border-2 border-crayon-black rounded-xl sketch-shadow btn-active">
+                            加入共创群
+                        </button>
+                    </div>
 
-            <!-- CTA Buttons -->
-            <div class="flex flex-col sm:flex-row gap-6 justify-center mb-12">
-                <button onclick="showToast()" class="bg-crayon-yellow px-10 py-4 text-xl border-2 border-crayon-black rounded-xl sketch-shadow btn-active flex items-center justify-center gap-2">
-                    开始规划 <i data-lucide="arrow-right"></i>
-                </button>
-                <button onclick="toggleQr(true)" class="bg-white px-10 py-4 text-xl border-2 border-crayon-black rounded-xl sketch-shadow btn-active">
-                    加入共创群
-                </button>
-            </div>
-
-            <!-- Trust Badge -->
-            <div class="flex justify-center">
-                <div class="p-4 border-2 border-dashed border-crayon-green/40 rounded-2xl bg-crayon-green/5 flex items-start gap-4 text-left max-w-xl">
-                    <i data-lucide="shield-check" class="text-crayon-green flex-shrink-0 mt-1"></i>
-                    <p class="text-sm text-gray-500 leading-relaxed font-crayon">
-                        <strong class="text-crayon-black">隐私承诺：</strong> 时宜（Timei）是本地优先应用。未经您的明确许可，我们不会上传您的任何个人数据。您的目标和隐私完全属于您自己。
-                    </p>
+                    <!-- Trust Badge -->
+                    <div class="p-4 border-2 border-dashed border-crayon-green/40 rounded-2xl bg-crayon-green/5 flex items-start gap-4 text-left max-w-md">
+                        <i data-lucide="shield-check" class="text-crayon-green flex-shrink-0 mt-1"></i>
+                        <p class="text-sm text-gray-500 leading-relaxed font-crayon">
+                            <strong class="text-crayon-black">隐私承诺：</strong> 时宜（Timei）是本地优先应用。未经您的明确许可，我们不会上传您的任何个人数据。您的目标和隐私完全属于您自己。
+                        </p>
+                    </div>
                 </div>
             </div>
 
@@ -205,28 +203,28 @@
                     <div class="w-12 h-12 bg-crayon-yellow rounded-full mb-4 flex items-center justify-center border-2 border-crayon-black">
                         <i data-lucide="brain-circuit"></i>
                     </div>
-                    <h3 class="font-bold text-2xl mb-3 text-left">目标拆解</h3>
+                    <h3 class="font-bold text-2xl mb-3 text-left">目标<span class="text-crayon-yellow underline decoration-wavy underline-offset-8">拆解</span></h3>
                     <p class="text-left text-gray-500">输入模糊想法，AI 自动细化为可执行的任务序列。</p>
                 </div>
                 <div class="p-8 border-2 border-crayon-black rounded-2xl bg-white sketch-shadow">
                     <div class="w-12 h-12 bg-crayon-blue rounded-full mb-4 flex items-center justify-center border-2 border-crayon-black">
                         <i data-lucide="list-checks"></i>
                     </div>
-                    <h3 class="font-bold text-2xl mb-3 text-left">任务追踪</h3>
+                    <h3 class="font-bold text-2xl mb-3 text-left">任务<span class="text-crayon-blue underline decoration-wavy underline-offset-8">追踪</span></h3>
                     <p class="text-left text-gray-500">支持计时、计数、打卡等多种维度记录生活。</p>
                 </div>
                 <div class="p-8 border-2 border-crayon-black rounded-2xl bg-white sketch-shadow">
                     <div class="w-12 h-12 bg-crayon-purple rounded-full mb-4 flex items-center justify-center border-2 border-crayon-black">
                         <i data-lucide="clock"></i>
                     </div>
-                    <h3 class="font-bold text-2xl mb-3 text-left">时间管理</h3>
+                    <h3 class="font-bold text-2xl mb-3 text-left">时间<span class="text-crayon-purple underline decoration-wavy underline-offset-8">管理</span></h3>
                     <p class="text-left text-gray-500">可视化时间轴，规划你的未来，回顾你的过去。</p>
                 </div>
                 <div class="p-8 border-2 border-crayon-black rounded-2xl bg-white sketch-shadow">
                     <div class="w-12 h-12 bg-crayon-green rounded-full mb-4 flex items-center justify-center border-2 border-crayon-black">
                         <i data-lucide="trending-up"></i>
                     </div>
-                    <h3 class="font-bold text-2xl mb-3 text-left">自我量化</h3>
+                    <h3 class="font-bold text-2xl mb-3 text-left">自我<span class="text-crayon-green underline decoration-wavy underline-offset-8">量化</span></h3>
                     <p class="text-left text-gray-500">专注时间兑换积分，见证每一刻的价值。</p>
                 </div>
             </div>
@@ -236,12 +234,12 @@
             <div class="flex flex-col items-center gap-4">
                 <div class="flex items-center gap-2 mb-2">
                     <i data-lucide="mail" class="w-4 h-4"></i>
-                    <a href="mailto:timei@tcommons.top" class="hover:text-crayon-blue underline decoration-dotted">timei@tcommons.top</a>
+                    <a href="mailto:uno5and_timei@tcommons.top" class="hover:text-crayon-blue underline decoration-dotted">uno5and_timei@tcommons.top</a>
                 </div>
                 <p class="text-sm">
                     &copy; 2026 Designed by Uno5&
                 </p>
-                <p class="text-[14px] opacity-60 ">盛年不重来，此刻正时宜。</p>
+                <p class="text-[14px] opacity-60 "><span class="text-crayon-blue">盛年不重来</span>，<span class="text-crayon-red">此刻正时宜</span>。</p>
             </div>
         </footer>
     </div>
