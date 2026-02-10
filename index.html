@@ -36,7 +36,10 @@
 
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
-    
+
+    <!-- Tally Form Embed -->
+    <script async src="https://tally.so/widgets/embed.js"></script>
+
     <script>
         tailwind.config = {
             theme: {
@@ -155,7 +158,7 @@
 
     <!-- Toast Notification -->
     <div id="toast" class="toast">
-        <span id="toast-message">Timei Beta v1.1 | 已深度集成 AI<br/>2.9日开放下载，敬请期待！</span>
+        <span id="toast-message">Timei Beta v1.1 | 已深度集成 AI<br/>开放下载日期待定，可加入共创群催更！</span>
     </div>
 
     <!-- Landing Page -->
@@ -220,7 +223,12 @@
                 <div class="flex flex-col items-center lg:items-start gap-8">
                     <!-- CTA Buttons -->
                     <div class="flex flex-col sm:flex-row gap-6">
-                        <button onclick="showToast()" class="bg-crayon-yellow px-10 py-4 text-xl border-2 border-crayon-black rounded-xl sketch-shadow btn-active flex items-center justify-center gap-2">
+                        <button data-tally-open="2ENLyD"
+                                data-tally-layout="modal"
+                                data-tally-width="380"
+                                data-tally-align-left="1"
+                                data-tally-hide-title="1"
+                                class="bg-crayon-yellow px-10 py-4 text-xl border-2 border-crayon-black rounded-xl sketch-shadow btn-active flex items-center justify-center gap-2">
                             开始规划 <i data-lucide="arrow-right"></i>
                         </button>
                         <button onclick="toggleQr(true)" class="bg-white px-10 py-4 text-xl border-2 border-crayon-black rounded-xl sketch-shadow btn-active">
